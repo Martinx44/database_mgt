@@ -25,3 +25,13 @@ FROM product
 
 SELECT MIN(sales) AS minimum_sale 
 FROM product
+
+
+SELECT customer_name, region, product_id
+FROM customer
+WHERE region = 'West';
+
+
+SELECT order_id, order_date, shipping_date, product_id
+FROM orders
+WHERE order_date BETWEEN '2015-01-01' AND '2016-12-31';
