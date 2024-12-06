@@ -1,0 +1,27 @@
+querying database
+
+SELECT P.product_id, O.product_id
+FROM product p
+FULL JOIN orders o
+   ON o.product_id = p.product_id 
+
+
+   -- getting the total number of slaes
+
+select sum(sales) as total_sales
+from product
+
+-- getting the average sales 
+
+SELECT AVG(sales) average_sales
+FROM product
+
+--getting the highest sales 
+
+SELECT MAX(sales) AS maximum_sale 
+FROM product
+
+--getting the lowest sales 
+
+SELECT MIN(sales) AS minimum_sale 
+FROM product
