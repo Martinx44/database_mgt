@@ -1,5 +1,6 @@
 querying database
 
+
 SELECT P.product_id, O.product_id
 FROM product p
 FULL JOIN orders o
